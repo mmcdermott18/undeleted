@@ -13,15 +13,27 @@
         font-family: 'Poppins', sans-serif;
       }
       .cls-1{fill:#dddddd;}
-      div {
+      #title {
         width: 50%;
         margin: calc(50vh - 100px) auto 0;
+      }
+      @media only screen and (max-width: 700px) {
+        #title {
+          width: 75%;
+          margin: calc(50vh - 100px) auto 0;
+        }
+      }
+      #bottom-line {
+        position: absolute;
+        bottom: 25px;
+        left: calc(50vw - 92px);
       }
       p {
         text-transform: uppercase;
         letter-spacing: 2px;
         text-align: center;
         font-weight: 300;
+        font-size: .8rem;
       }
       a, a:link, a:visited, a:active {
         color: #dddddd;
@@ -31,7 +43,7 @@
     </style>
   </head>
   <body>
-    <div>
+    <div id="title">
       <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 465.27 61.63">
         <path class="cls-1" d="M28.14,19.42V40.57c0,8.72-4.31,14.5-11.65,14.5-5.87,0-9.32-3.88-9.32-10.1V19.42H0V45.23c0,10.71,5.18,16.4,14.25,16.4,8.11,0,12.6-5.35,14.58-12.69H30L28.14,60.42h6.91v-41Z"/>
         <path class="cls-1" d="M75.36,18.21c-7.08,0-12.17,4.23-14.5,12.69H59.65l1.9-11.48H54.64V39.37h6.91v-.09c0-8.9,4.66-14.68,12.08-14.68,6.31,0,9.67,3.89,9.67,11.4V60.42h7.08V35.13C90.38,24.17,85.11,18.21,75.36,18.21Z"/>
@@ -43,6 +55,8 @@
         <path class="cls-1" d="M412,38.76c0-7.32-2.26-13-6.39-16.47L401,26.94c2.23,2,3.52,5.06,3.7,9.14H380.85a14.92,14.92,0,0,1,4.3-8.81l-4.58-4.57c-4.55,3.93-7.15,10.16-7.15,17.44,0,13,7.17,21.49,20.55,21.49,9.15,0,16.49-5.78,17.95-13.72H405c-1.47,4.75-5.7,7.51-11.14,7.51-8.2,0-12.69-5.44-13.21-13.64H412Z"/>
         <path class="cls-1" d="M458.36,0V19.42l1.9,11.48h-1.21c-2.24-8.37-7.94-12.69-15.71-12.69-11.22,0-18.81,8.38-18.81,21.67,0,13.47,7.68,21.75,18.81,21.75l1,0V55.4c-7.83-.37-12.6-6.33-12.6-15.52,0-9.5,5.09-15.45,13.38-15.45s13.28,5.82,13.46,14.94h6.74V0Z"/>
       </svg>
+    </div>
+    <div id="bottom-line">
       <p><a href="https://www.instagram.com/undeleted.works/">follow on instagram</a></p>
     </div>
   </body>
