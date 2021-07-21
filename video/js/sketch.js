@@ -18,7 +18,7 @@ var capturer = new CCapture({ format: 'webm' , framerate: 30 , name: length + 's
 function preload() {
   for (let i = 0; i < imgAmount; i++) {
     imgNumber = i + 1;
-    append(images, loadImage('../images/' + imgNumber + '.jpg'));
+    append(images, loadImage('images/' + imgNumber + '.jpg'));
   }
   shuffle(images, true);
 }
