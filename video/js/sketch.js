@@ -1,24 +1,25 @@
+// variables to change
 let fName = 'UD1' //phone identifier name for video export
-let img;
-let imgNumber
-let images = [];
 let imgAmount = 6; // set number of images in folder
+let rMax = 4; // high value for shuffler - numbers below this number will take low value image frame rate and only the high value will get the high value image frame rate
+let frLMin = 1; // low value image frame rate minumum
+let frLMax = 5; // low value image frame rate minumum
+let frHMin = 30; // high value image frame rate minumum
+let frHMax = 90; // high value image frame rate maximum
+let length = 10; // video duration in seconds
+
+let img; // used to load image onto canvas
+let imgNumber // used while building images array
+let images = []; // array of images
 let imgIndex = 0;
-let c = 0;
+let c = 0; //initial counter value for individual image
 let fr; //amount of frames image stays on screen
-let r; //current shuffler value
-let rMax = 4; //high value for shuffler
-let frLMin = 1; //frame rate minumum
-let frLMax = 5; //frame rate minumum
-let frHMin = 30; //high value frame rate minumum
-let frHMax = 90; //high value frame rate maximum
+let r; //current shuffler value to set image frame rate
+let counter = 0; // initial counter value for video
+let end = 30 * length; // adjusts length to be in frames
 
-let counter = 0;
-let length = 10; // in seconds
-let end = 30 * length; // in frames
-
-var capturer = new CCapture({ format: 'webm' , framerate: 30 , name: length + 'sec-' + fName });
-var started = true;
+var capturer = new CCapture({ format: 'webm' , framerate: 30 , name: length + 'sec-' + fName }); // name based on length variable and fName variable
+var started = true; // true starts automatically and lets video export continue to happen on page reload, false means start button must be pressed and only one video will be generated per press
 
 function preload() {
   for (let i = 0; i < imgAmount; i++) {
