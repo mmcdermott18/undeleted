@@ -1,12 +1,12 @@
 // variables to change
-let fName = 'UD1' //phone identifier name for video export
-let imgAmount = 6; // set number of images in folder
-let rMax = 4; // high value for shuffler - numbers below this number will take low value image frame rate and only the high value will get the high value image frame rate
+let fName = 'UD33a' //phone identifier name for video export
+let imgAmount = 830; // set number of images in folder
+let rMax = 6; // high value for shuffler - numbers below this number will take low value image frame rate and only the high value will get the high value image frame rate
 let frLMin = 1; // low value image frame rate minumum
 let frLMax = 5; // low value image frame rate minumum
 let frHMin = 30; // high value image frame rate minumum
 let frHMax = 90; // high value image frame rate maximum
-let length = 10; // video duration in seconds
+let length = 60; // video duration in seconds
 
 let img; // used to load image onto canvas
 let imgNumber // used while building images array
