@@ -2,11 +2,11 @@
 let fName = 'UD33a' //phone identifier name for video export
 let imgAmount = 830; // set number of images in folder
 let rMax = 6; // high value for shuffler - numbers below this number will take low value image frame rate and only the high value will get the high value image frame rate
-let frLMin = 1; // low value image frame rate minumum
-let frLMax = 5; // low value image frame rate minumum
+let frLMin = 5; // low value image frame rate minumum
+let frLMax = 20; // low value image frame rate minumum
 let frHMin = 30; // high value image frame rate minumum
 let frHMax = 90; // high value image frame rate maximum
-let length = 60; // video duration in seconds
+let length = 1; // video duration in minutes
 
 let img; // used to load image onto canvas
 let imgNumber // used while building images array
@@ -16,7 +16,7 @@ let c = 0; //initial counter value for individual image
 let fr; //amount of frames image stays on screen
 let r; //current shuffler value to set image frame rate
 let counter = 0; // initial counter value for video
-let end = 30 * length; // adjusts length to be in frames
+let end = 30 * (length * 60); // adjusts length to be in frames
 
 var capturer = new CCapture({ format: 'webm' , framerate: 30 , name: length + 'sec-' + fName }); // name based on length variable and fName variable
 var started = true; // true starts automatically and lets video export continue to happen on page reload, false means start button must be pressed and only one video will be generated per press
