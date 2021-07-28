@@ -49,7 +49,7 @@ function draw() {
     if (counter == end) {
       counter = 0;
       save_record();
-      setTimeout(function(){startover()},100);
+      setTimeout(function(){startover()},1000);
     } else {
       counter++;
     }
