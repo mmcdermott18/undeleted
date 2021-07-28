@@ -6,7 +6,7 @@ let frLMin = 5; // low value image frame rate minumum
 let frLMax = 20; // low value image frame rate minumum
 let frHMin = 30; // high value image frame rate minumum
 let frHMax = 90; // high value image frame rate maximum
-let length = 1; // video duration in minutes
+let length = 5; // video duration in minutes
 
 let img; // used to load image onto canvas
 let imgNumber // used while building images array
