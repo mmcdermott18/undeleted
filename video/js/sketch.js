@@ -1,10 +1,10 @@
 // variables to change
-let fName = 'UD33a' //phone identifier name for video export
-let imgAmount = 830; // set number of images in folder
+let fName = 'UD27-1' //phone identifier name for video export
+let imgAmount = 344; // set number of images in folder
 let rMax = 6; // high value for shuffler - numbers below this number will take low value image frame rate and only the high value will get the high value image frame rate
-let frLMin = 5; // low value image frame rate minumum
-let frLMax = 20; // low value image frame rate minumum
-let frHMin = 30; // high value image frame rate minumum
+let frLMin = 25; // low value image frame rate minumum
+let frLMax = 35; // low value image frame rate minumum
+let frHMin = 35; // high value image frame rate minumum
 let frHMax = 90; // high value image frame rate maximum
 let length = 5; // video duration in minutes
 
@@ -24,6 +24,14 @@ var started = true; // true starts automatically and lets video export continue 
 function preload() {
   for (let i = 0; i < imgAmount; i++) {
     imgNumber = i + 1;
+    // if (imgNumber < 10) {
+    //   imgNumber = "00" + imgNumber;
+    //   console.log(imgNumber);
+    // } else if (imgNumber > 9 && imgNumber < 100) {
+    //   imgNumber =  "0" + imgNumber;
+    // } else {
+    //   imgNumber = imgNumber;
+    // }
     append(images, loadImage('images/' + imgNumber + '.jpg'));
   }
   shuffle(images, true);
@@ -31,7 +39,8 @@ function preload() {
 
 function setup() {
   frameRate(30);
-  createCanvas(windowHeight / 1.7777777, windowHeight);
+  // createCanvas(windowHeight / 1.7777777, windowHeight);
+  createCanvas(720 , 1280);
   r = int(random(0, rMax + 1));
   if (r == rMax) {
     fr = int(random(frHMin, frHMax));
@@ -45,13 +54,32 @@ function setup() {
 function draw() {
   click();
   if (started) {
-    console.log("counter");
+    // console.log("counter");
     if (counter == end) {
       counter = 0;
       save_record();
       // setTimeout(function(){startover()},10000);
     } else {
       counter++;
+      if (counter == 1000) {
+        console.log('1000 frames drawn');
+      } else if (counter == 2000) {
+        console.log('2000 frames drawn');
+      } else if (counter == 3000) {
+        console.log('3000 frames drawn');
+      } else if (counter == 4000) {
+        console.log('4000 frames drawn');
+      } else if (counter == 5000) {
+        console.log('5000 frames drawn');
+      } else if (counter == 6000) {
+        console.log('6000 frames drawn');
+      } else if (counter == 7000) {
+        console.log('7000 frames drawn');
+      } else if (counter == 8000) {
+        console.log('8000 frames drawn');
+      } else if (counter == 9000) {
+        console.log('video done');
+      }
     }
     clear();
     img = images[imgIndex];
