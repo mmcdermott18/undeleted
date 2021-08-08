@@ -40,7 +40,7 @@ function preload() {
 function setup() {
   frameRate(30);
   // createCanvas(windowHeight / 1.7777777, windowHeight);
-  createCanvas(720 , 1280);
+  createCanvas(608 , 1080);
   r = int(random(0, rMax + 1));
   if (r == rMax) {
     fr = int(random(frHMin, frHMax));
