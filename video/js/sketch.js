@@ -9,7 +9,7 @@ let frHMax = 90; // high value image frame rate maximum
 let length = 5; // video duration in minutes
 
 let img; // used to load image onto canvas
-let imgNumber // used while building images array
+let imgNumber // used while building webimages array
 let images = []; // array of images
 let imgIndex = 0;
 let c = 0; //initial counter value for individual image
