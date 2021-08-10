@@ -6,7 +6,7 @@ let images0 = []; // array of images, one for each folder + one at the end with 
 let images1 = [];
 let images2 = [];
 let folderValues = [304, 300, 300]; // amount of files in each folder with the final fake 10 image folder
-let currentArray = [images0, images1, images2; // array of image arrays
+let currentArray = [images0, images1, images2]; // array of image arrays
 let currentFolder = ["images-0", "images-1", "images-2"]; // array of folder names
 
 let rMax = 6; // high value for shuffler - numbers below this number will take low value image frame rate and only the high value will get the high value image frame rate
