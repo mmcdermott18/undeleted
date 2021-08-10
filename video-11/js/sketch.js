@@ -7,7 +7,7 @@ let images1 = [];
 let images2 = [];
 let images3 = [];
 let images4 = [];
-let folderValues = [xx, xx, xx, xx, xx]; // amout of files in each folder with the final fake 10 image folder
+let folderValues = [301, 299, 300, 364, 364]; // amout of files in each folder with the final fake 10 image folder
 let currentArray = [images0, images1, images2, images3, images4]; // array of image arrays
 let currentFolder = ["images-0", "images-1", "images-2", "images-3", "images-4"]; // array of folder names
 

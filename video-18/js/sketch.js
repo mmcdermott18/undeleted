@@ -1,15 +1,18 @@
 // variables to change
 let fName = 'comp18-' // phone identifier name for video export
-let folderAmount = 5; // amount of folders
-let length = 5; // video duration in minutes
+let folderAmount = 8; // amount of folders
+let length = 1; // video duration in minutes
 let images0 = []; // array of images, one for each folder + one at the end with 10 images
 let images1 = [];
 let images2 = [];
 let images3 = [];
 let images4 = [];
-let folderValues = [xx, xx, xx, xx, xx]; // amout of files in each folder with the final fake 10 image folder
-let currentArray = [images0, images1, images2, images3, images4]; // array of image arrays
-let currentFolder = ["images-0", "images-1", "images-2", "images-3", "images-4"]; // array of folder names
+let images5 = [];
+let images6 = [];
+let images7 = [];
+let folderValues = [150, 150, 150, 127, 150, 97, 100, 100]; // amout of files in each folder with the final fake 10 image folder
+let currentArray = [images0, images1, images2, images3, images4, images5, images6, images7]; // array of image arrays
+let currentFolder = ["images-0", "images-1", "images-2", "images-3", "images-4", "images-5", "images-6", "images-7"]; // array of folder names
 
 let rMax = 6; // high value for shuffler - numbers below this number will take low value image frame rate and only the high value will get the high value image frame rate
 let frLMin = 25; // low value image frame rate minumum
